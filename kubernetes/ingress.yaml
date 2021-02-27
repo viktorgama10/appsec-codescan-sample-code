@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: rest-api-ingress
+  namespace: default
+spec:
+  rules:
+  - host: api.ibmcloudcr.com
+    http:
+      paths:
+        - path: /skill_management/v1
+          backend:
+            serviceName: skill-management-service
+            servicePort: 80
+  - host: api-test.ibmcloudcr.com
+    http:
+      paths:
+        - path: /skill-management
+          backend:
+            serviceName: skill-management-service-test
+            servicePort: 80

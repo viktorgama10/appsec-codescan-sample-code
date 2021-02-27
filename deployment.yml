@@ -1,0 +1,22 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: icp-file-mng-microservice-test
+  labels:
+    name: icp-file-mng-microservice-test
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: icp-file-mng-microservice-test
+  template:
+    metadata:
+      name: icp-file-mng-microservice-test
+      labels:
+        name: icp-file-mng-microservice-test
+    spec:
+      containers:
+        - name: icp-file-mng-microservice-test
+          image: us.icr.io/cloud-cr/icp-file-mng-microservice-test:latest
+          ports:
+            - containerPort: 80

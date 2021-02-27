@@ -1,0 +1,107 @@
+ 2009  kubectl create -f pod.yaml
+ 2010  ls
+ 2011  mv pod.yaml busybox.yaml
+ 2012  clear
+ 2013  ls
+ 2014  cd ..
+ 2015  ls
+ 2016  kubectl apply -f deployment.yml
+ 2017  kubectl get all
+ 2018  kubectl exec -it pod/skill-management-test-54d988f74d-rcclh -- /bin/bash
+ 2019  kubectl get pods
+ 2020  echo "my-secret-value" | base64
+ 2021  ls
+ 2022  kubectl apply -f service.yml
+ 2023  kubectl get all
+ 2024  kubectl get service/skill-management-service-test
+ 2025  kubectl get service service/skill-management-service-test -o yaml
+ 2026  kubectl get service/skill-management-service-test -o yaml
+ 2027  ls
+ 2028  kubectl apply -f ingress.yaml
+ 2029  kubectl describe ingress name-virtual-host-ingress
+ 2030  kubectl get po --all-namespaces
+ 2031  kubectl get all
+ 2032  kubectl delete ingress name-virtual-host-ingress
+ 2033  kubectl apply -f ingress.yaml
+ 2034  clear
+ 2035  kubectl describe ingress vhost-cloud-cr-microservices-ingress
+ 2036  nslookup cloudcrappservices.us-south.containers.appdomain.cloud
+ 2037  nslookup api.ibmcloudcr.com
+ 2038  kubectl apply -f ingress.yaml
+ 2039  kubectl describe ingress vhost-cloud-cr-microservices-ingress
+ 2040  kubectl get all
+ 2041  kubectl delete ingress vhost-cloud-cr-microservices-ingress
+ 2042  kubectl apply -f ingress.yaml
+ 2043  cleear
+ 2044  clear
+ 2045  docker images
+ 2046  docker run -p 80:80 -e "DATABASE_URL=postgresql://ibm_cloud_a819b5a1_31da_40a6_9e27_9b408dd69d4c:b4815582ba9411495a4424dfa143f63aef2f3f76da9c2bda10705ab1cc9c190d@baed79df-270b-4418-850f-085f73ac1804.8117147f814b4b2ea643610826cd2046.databases.appdomain.cloud:30518/ibmclouddb?sslmode=require" skill-mng-microservice
+ 2047  kubectl get pods
+ 2048  kubectl get services
+ 2049  kubectl describe skill-management-test-54d988f74d-fnzt8
+ 2050  kubectl describe skill-management-test
+ 2051  kubectl get skill-management-test
+ 2052  kubectl get pod skill-management-test-54d988f74d-rcclh
+ 2053  kubectl get pod skill-management-test-54d988f74d-rcclh --o yaml
+ 2054  kubectl get pod skill-management-test-54d988f74d-rcclh --o=yaml
+ 2055  kubectl get pod skill-management-test-54d988f74d-rcclh -o yaml
+ 2056  kubectl get pods
+ 2057  kubectl exec -it pod/skill-management-test-54d988f74d-rcclh -- /bin/bash
+ 2058  kubectl get pods
+ 2059  kubectl exec -it busybox1 -- /bin/bash
+ 2060  kubectl exec -it pod/skill-management-test-54d988f74d-rcclh -- /bin/bash
+ 2061  kubectl delete ingress app-services-ingress
+ 2062  kubectl apply -f ingress.yaml
+ 2063  kubectl describe ingress test-ingress
+ 2064  kubectl apply -f ingress.yaml
+ 2065  kubectl describe ingress test-ingress-2
+ 2066  git status
+ 2067  kubectl delete ingress test-ingress-2
+ 2068  kubectl delete ingress test-ingress
+ 2069  clear
+ 2070  kubectl get ingress
+ 2071  kubectl get services
+ 2072  kubectl apply -f ingress.yaml
+ 2073  kubectl get ingress
+ 2074  kubectl describe ingress vhost-app-ingress
+ 2075  kubectl get pods -o wide
+ 2076  kubectl logs skill-management-test-54d988f74d-fnzt8
+ 2077  kubectl get services
+ 2078  kubectl get services wide
+ 2079  kubectl get services -o wide
+ 2080  kubectl apply service.yml
+ 2081  kubectl apply -f service.yml
+ 2082  kubectl get services -o wide
+ 2083  kubectl get ingress vhost-app-ingress
+ 2084  kubectl delete ingress vhost-app-ingress
+ 2085  kubectl apply -f fargress.yaml
+ 2086  kubectl get ingress basic-ingress
+ 2087  kubectl delete ingress basic-ingress
+ 2088  kubectl get ingress
+ 2089  kubectl apply -f fargress.yaml
+ 2090  kubectl get ingress
+ 2091  kubectl delete ingress basic-ingress
+ 2092  kubectl apply -f ingress.yaml
+ 2093  clear
+ 2094  history
+ 2095  kubectl apply -f ingress.yaml
+ 2096  kubectl get all
+ 2097  kubectl delete pod busybox1
+ 2098  kubectl get all
+ 2099  kubectl delete deployment skill-management-test
+ 2100  kubectl apply -f deployment.yml
+ 2101  kubectl get all
+ 2102  kubectl get all -o wide
+ 2103  kubectl describe pod pod/skill-management-test-54d988f74d-5kggx
+ 2104  kubectl get pod pod/skill-management-test-54d988f74d-5kggx
+ 2105  kubectl get pod skill-management-test-54d988f74d-5kggx
+ 2106  kubectl get pod skill-management-test-54d988f74d-5kggx -o ymal
+ 2107  kubectl get pod skill-management-test-54d988f74d-5kggx -o yaml
+ 2108  kubectl apply -f deployment.yml
+ 2109  kubectl expose deployment skill-management-test --type=LoadBalancer --name=skill-management-service
+ 2110  kubectl get services my-service
+ 2111  kubectl get services skill-management-service
+ 2112  kubectl apply -f ingress.yaml
+ 2113  kubectl get ingress rest-api-ingress
+ 2114  kubectl apply -f ingress.yaml
+ 2115  history

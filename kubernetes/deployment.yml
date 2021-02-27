@@ -1,0 +1,28 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: skill-management-test
+  labels:
+    name: skill-management-test
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: skill-management-test
+  template:
+    metadata:
+      name: skill-management-test
+      labels:
+        name: skill-management-test
+    spec:
+      containers:
+        - name: skill-management-test
+          image: us.icr.io/cloud-cr/skill-management-microservice:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: skill-mng-secrets-dev
+                  key: DATABASE_URL
